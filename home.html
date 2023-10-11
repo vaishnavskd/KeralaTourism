@@ -1,130 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kerala Tourism</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala Tourism</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/home.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
+
 <body>
-      <!-- Navbar -->
-      <nav class="navbar nav-underline navbar-expand-lg pt-4 bg-body-secondary">
-        <div class="container-fluid p-4">
-        
-        <p class="h3 ps-3">Kerala Tourism</p>
-  
-        
-          <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-end">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Districts</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Login/Signup
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Login</a></li>
-                  <li><a class="dropdown-item" href="#">Signup</a></li>
-                </ul>
-              </li>
+  <!-- Navbar -->
+  <nav class="navbar nav-underline navbar-expand-lg pt-4">
+    <div class="container-fluid p-2">
+      <a href="./index.html"><img src="./images/kllogo.png" alt="logo" height="70px"></a>
+
+      <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="justify-content-end collapse navbar-collapse padrt" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-end">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./district.html">Districts</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login/Signup
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./login.html">Login</a></li>
+              <li><a class="dropdown-item" href="./signup.html">Signup</a></li>
             </ul>
-            </div>
-          </div>
-        </nav>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Carousal -->
 
-      <!-- Carousal -->
-
-      <div class="container-fluid pt-5 w-75 h-75">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/img1.jpg" alt="carousal" width="800" height="400" class="d-block w-100 object-fit-cover">
-            </div>
-            <div class="carousel-item">
-              <img src="images/KL (2).jpg" alt="carousal" width="800" height="400" class="d-block w-100 object-fit-cover">
-            </div>
-            <div class="carousel-item">
-              <img src="images/KL (6).jpg" alt="carousal" width="800" height="400" class="d-block w-100 object-fit-cover">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+  <div class="container pt-5 pb-5 vw-100">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/KL (9).jpg" alt="carousal" width="800" height="400" class="d-block w-100 object-fit-cover">
         </div>
+        <div class="carousel-item ">
+          <img src="images/KL (6).jpg" alt="carousal" width="800" height="400" class="d-block w-100 object-fit-cover">
         </div>
-    
-      <!-- Contents -->
-      <div class="container m-5">
-        <p class="h3">Discover the Magic of Kerala</p>
-        <p><b> Experience the perfect blend of nature, culture, and tranquility in the heart of India's southwestern
-            coast.</b> Kerala, often referred to as "God's Own Country," is a land of diverse landscapes, rich heritage, and
-          warm hospitality. From the serene backwaters to lush hill stations, vibrant festivals to exotic wildlife, Kerala
-          offers an array of experiences that will leave you captivated.
-        </p>
+        
+        <div class="carousel-item">
+          <img src="images/kl.jpg" alt="carousal" width="800" height="400" class="d-block w-100 object-fit-cover">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br><br>
+  <!-- Contents -->
+  <div id="about" class=" bg-white bg-opacity-50 container p-5 p-sm-3 vw-100">
+    <div class="row">
+      <p class="display-6 text-center pb-1">Discover the Magic of Kerala</p>
+      <p><b> Experience the perfect blend of nature, culture, and tranquility in the heart of India's southwestern
+          coast.</b>
+      <p>
+        Kerala, often referred to as <em>"God's Own Country"</em> is a land of diverse landscapes, rich heritage, and
+        warm hospitality. From the serene backwaters to lush hill stations, vibrant festivals to exotic wildlife, Kerala
+        offers an array of experiences that will leave you captivated.
+      </p>
+      </p>
+      <p>
+      <div class="col">
+        <p class="h3 text-center">Explore Nature's Bounty</p>
+        <p class="h5">Backwaters and Houseboats</p>
         <p>
-          <p class="h4">Explore Nature's Bounty</p>
-          Backwaters and Houseboats
-          Step onto a traditional Kettuvallam houseboat and let the backwaters cradle you. Glide through the palm-fringed
-          canals, witness the local life, and soak in the spectacular sunsets. The Alleppey Backwaters and Vembanad Lake are
+          Step onto a traditional Kettuvallam houseboat and let the backwaters cradle you. Glide through the
+          palm-fringed
+          canals, witness the local life, and soak in the spectacular sunsets. The Alleppey Backwaters and Vembanad Lake
+          are
           must-see destinations.
         </p>
-        Hill Stations
-        Escape to the cool, misty hills of Munnar, Wayanad, and Thekkady. With sprawling tea plantations, cascading
-        waterfalls, and aromatic spice gardens, these hill stations offer a refreshing retreat from the hustle and bustle of
-        city life.
-      
-        Beaches
-        Kerala boasts a coastline of golden sands and swaying palms. Kovalam, Varkala, and Marari are idyllic beach
-        destinations where you can relax, swim, and revel in the beauty of the Arabian Sea.
+        <img src="./images/houseboat.jpg" alt="houseboat" class="img-fluid">
+        </p>
+        <p class="h5">Hill Stations</p>
+        <p>
+          Escape to the cool, misty hills of Munnar, Wayanad, and Thekkady. With sprawling tea plantations, cascading
+          waterfalls, and aromatic spice gardens, these hill stations offer a refreshing retreat from the hustle and
+          bustle of
+          city life.
+        </p>
+        <img src="./images/munnar-1920x650.jpg" alt="hillstation" class="img-fluid">
+        <p class="h5">Beaches</p>
+        <p>
+          Kerala boasts a coastline of golden sands and swaying palms. Kovalam, Varkala, and Marari are idyllic beach
+          destinations where you can relax, swim, and revel in the beauty of the Arabian Sea.
+        </p>
+        <img src="./images/Kovalam_beach_trivandrum_kerala.jpg" alt="beach" class="img-fluid">
+        </div>
+      <div class="col">
         
-        Immerse Yourself in Culture
-        Kathakali and Classical Arts
-        Witness the enchanting world of Kathakali, a traditional dance form that tells stories through elaborate costumes and
-        expressive movements. Enjoy classical music performances and explore the vibrant local art scene.
-        
-        Temples and Palaces
-        Visit the architectural wonders of Kerala, including the Padmanabhaswamy Temple in Trivandrum, the historic Mattancherry
-        Palace in Kochi, and the ancient temples of Thrissur.
-        
-        Adventure Awaits
-        Periyar Wildlife Sanctuary
-        Embark on a thrilling jungle safari in the heart of the Western Ghats. Encounter elephants, tigers, and a myriad of bird
-        species in their natural habitat.
-        
-        Trekking and Waterfalls
-        For the adventure seeker, explore the trails of the Western Ghats. Trek to places like Chembra Peak in Wayanad and enjoy
-        the mesmerizing views. Don't miss the stunning Athirappilly Falls, the 'Niagara of India'.</p>
+        <p class="h3 text-center">Immerse Yourself in Culture</p>
+        <p class="h5">Kathakali and Classical Arts</p>
+        <p>
+          Witness the enchanting world of Kathakali, a traditional dance form that tells stories through elaborate
+          costumes and
+          expressive movements. Enjoy classical music performances and explore the vibrant local art scene.
+        </p><img src="./images/kathakali.png" alt="kathakali" class="img-fluid">
+        <br><br>
+        <p class="h5">Temples and Palaces</p>
+        <p>
+          Visit the architectural wonders of Kerala, including the Padmanabhaswamy Temple in Trivandrum, the historic
+          Mattancherry
+          Palace in Kochi, and the ancient temples of Thrissur.
+        </p>
+        <img src="./images/sree-padmanabhaswamy.jpg" alt="temple" class="img-fluid">
       </div>
-        <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <div class="col">
+        <p class="h3 text-center">Adventure Awaits</p>
+        <p class="h5">Periyar Wildlife Sanctuary</p>
+        <p>
+          Embark on a thrilling jungle safari in the heart of the Western Ghats. Encounter elephants, tigers, and a
+          myriad of bird
+          species in their natural habitat.
+        </p>
+        <img src="./images/wildlife.jpg" alt="wildlife" class="img-fluid">
+        <br><br>
+        <p class="h5">Trekking and Waterfalls</p>
+        <p>For the adventure seeker, explore the trails of the Western Ghats. Trek to places like Chembra Peak in
+          Wayanad and enjoy
+          the mesmerizing views. Don't miss the stunning Athirappilly Falls, the 'Niagara of India'.</p>
+          <img src="./images/waterfalls.jpg" alt="waterfalls" class="img-fluid">
+      </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="text-end pe-2 mt-5 bg-white ">
+      <a href="https://github.com/vaishnavskd"  class="text-decoration-none"><img src="./images/gitlogo.png" height="20px" width="20px" alt="github">Vaishnav S</a>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 
 </body>
+
 </html>
