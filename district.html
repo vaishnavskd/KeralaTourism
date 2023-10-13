@@ -1,58 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Districts</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    <!-- Font Import -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Districts</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Font Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/card.css">
+  <style>
+    .navbar {
+      font-family: 'Poppins', sans-serif;
+      background-color: rgba(0, 0, 0, 0.37);
+      color: rgb(0, 0, 0);
+      padding: 0% !important;
+    }
+
+    .card {
+      width: 300px;
+      height: 280px;
+      padding: 0;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .card * {
+      transition: 0.3s ease all;
+    }
+
+    .card img {
+      margin: 0;
+      width: 300px;
+      height: 224px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 0;
+      padding: 12px 12px 48px;
+      line-height: 32px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .card .focus-content {
+      display: block;
+      padding: 8px 12px;
+    }
+
+    .card p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .card:hover img,
+    .card:focus-within img {
+      margin-top: -80px;
+    }
+
+    .card:hover h3,
+    .card:focus-within h3 {
+      padding: 8px 12px 0;
+    }
+  </style>
 </head>
+
 <body>
-        <!-- HEADER -->
-        <header class="container-fluid bg-black bg-opacity-25">
-        <img src="images/logo.png" class="img-fluid" alt="logo">
-        <h3  class="user-select-none">Kerala Tourism</h3>
-        <nav class="navbar nav-underline navbar-expand-lg pt-4">
-            <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="justify-content-end collapse navbar-collapse padrt" id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-end">
-                <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./home.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Login/Signup
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./login.html">Login</a></li>
-                    <li><a class="dropdown-item" href="./signup.html">Signup</a></li>
-                </ul>
-                </li>
+  <!-- HEADER -->
+  <nav class="navbar nav-underline navbar-expand-lg pt-4">
+    <div class="container-fluid p-2">
+      <img src="images/logo.png" height="70px" width="75px" alt="logo" class="ms-3 mt-2">
+      <h3 class="user-select-none mt-3">Kerala Tourism</h3>
+
+      <button class="navbar-toggler justify-content-sm-end" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="justify-content-end collapse navbar-collapse padrt" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-end">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login/Signup
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./login.html">Login</a></li>
+              <li><a class="dropdown-item" href="./signup.html">Signup</a></li>
             </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- Contents -->
-    <div class="container mt-3">
-        <p class="display-5">Districts</p>
-        <p>Kerala is divided into 14 administrative districts. Each district has its own unique cultural, historical, and geographical features.</p>
-        <div class="row-cols-5">
-            <div class="col">
-            </div>
-        </div>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  </header>
+  <!-- Contents -->
+
+
+  <section class="py-5 text-center container-fluid bg-body-secondary pt-3">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Districts</h1>
+        <p class="lead text-body-secondary">Kerala, is divided into 14 administrative districts. Each district has its
+          own unique cultural, historical, and geographical features.</p>
+        <p>
+          <a href="#about" class="btn btn-primary my-2">To know more, Click Here</a>
+        </p>
+      </div>
     </div>
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </section>
+
+  <div class="container pt-5 mb-5" id="about">
+    <div class="row gap-4 justify-content-center">
+      <div class="card">
+        <a href="#" class="text-decoration-none text-black">
+          <img src="images/sree-padmanabhaswamy.jpg" alt="tvm">
+          <h3>Thiruvananthapuram</h3>
+          <div class="focus-content">
+            <p>Known for its historical landmarks, vibrant culture, and beautiful beaches.
+            </p>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="#" class="text-decoration-none text-black">
+        <img src="images/jatayu-1.jpg" alt="klm">
+        <h3>Kollam</h3>
+        <div class="focus-content">
+          <p>Known for its scenic backwaters and historic significance, also an important trade and industrial hub. 
+          </p>
+      </a>
+    </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/Sabarimala_temple_during_Periyar_butterfly_survey_at_Sabarimala,_2014_(20).jpg" alt="ptnm">
+      <h3>Pathanamthitta</h3>
+      <div class="focus-content">
+        <p>Known for its religious diversity and numerous Hindu temples.
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/Alappuzha.jpg" alt="alpy">
+      <h3>Alappuzha</h3>
+      <div class="focus-content">
+        <p>Known as the "Venice of the East".
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/Kottayam.jpg" alt="ktym">
+      <h3>Kottayam</h3>
+      <div class="focus-content">
+        <p>Characterized by its picturesque landscapes, rubber plantations, and educational institutions.
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/idukki-dam-.1.1757250.jpg" alt="idk">
+      <h3>Idukki</h3>
+      <div class="focus-content">
+        <p>Known for its dense forests, tea and spice plantations, and the majestic Idukki Arch Dam, an engineering marvel.
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/Fort-Kochi.jpg" alt="ern">
+      <h3>Ernakulam</h3>
+      <div class="focus-content">
+        <p>Known for modernity and tradition, with vibrant markets, historic landmarks, and a thriving port.
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/sree-padmanabhaswamy.jpg" alt="tvm">
+      <h3>Thrissur</h3>
+      <div class="focus-content">
+        <p>Known as the "Cultural Capital of Kerala".
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/palakkad.jpg" alt="pkd">
+      <h3>Palakkad</h3>
+      <div class="focus-content">
+        <p>Known for its lush green paddy fields, Palakkad is often referred to as the "Granary of Kerala."
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/Malappuram.jpg" alt="mlprm">
+      <h3>Malappuram</h3>
+      <div class="focus-content">
+        <p>Known for its historical significance, Islamic heritage, and educational institutions.
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/Kozhikode.jpg" alt="kkd">
+      <h3>Kozhikode</h3>
+      <div class="focus-content">
+        <p>Known for its historical importance as a major trade center during ancient times. 
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/Wayanad.jpg" alt="wyd">
+      <h3>Wayanad</h3>
+      <div class="focus-content">
+        <p>Known for its lush green forests, wildlife sanctuaries, and tea plantations.
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/kannur.jpg" alt="knr">
+      <h3>Kannur</h3>
+      <div class="focus-content">
+        <p>Known for its beautiful beaches, historic forts, and handloom industry. It has a rich cultural heritage and is known for its folk art forms like Theyyam.
+        </p>
+    </a>
+  </div>
+  </div>
+  <div class="card">
+    <a href="#" class="text-decoration-none text-black">
+      <img src="images/kasaragod.jpg" alt="ksd">
+      <h3>Kasaragod</h3>
+      <div class="focus-content">
+        <p>Known for its serene beaches, historic forts, and the influence of the Tulu culture.
+        </p>
+    </a>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
