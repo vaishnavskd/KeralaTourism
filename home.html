@@ -14,29 +14,38 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+  <style>
+    .navbar {
+      font-family: 'Poppins', sans-serif;
+      background-color: rgba(0, 0, 0, 0.37);
+      color: rgb(0, 0, 0);
+      padding: 0% !important;
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-body-secondary">
   <!-- Navbar -->
-  <nav class="navbar nav-underline navbar-expand-lg pt-4 bg-body-secondary">
+  <nav class="navbar nav-underline navbar-expand-lg pt-4">
     <div class="container-fluid p-2">
-      <a href="./index.html"><img src="./images/kllogo.png" alt="logo" height="70px"></a>
+      <img src="images/logo.png" height="70px" width="75px" alt="logo" class="ms-3 mt-2">
+      <h3 class="user-select-none mt-3">Kerala Tourism</h3>
 
-      <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
+      <button class="navbar-toggler justify-content-sm-end" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="justify-content-end collapse navbar-collapse padrt" id="navbarNavDropdown">
+      <div class="justify-content-end collapse navbar-collapse pe-4" id="navbarNavDropdown">
         <ul class="navbar-nav align-items-end">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="./home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./district.html">Districts</a>
+            <a class="nav-link" aria-current="page" href="./district.html">Districts</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,8 +58,8 @@
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
+</div>
+</nav>
 
   <!-- Carousal -->
 

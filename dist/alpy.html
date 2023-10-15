@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alappuzha</title>
+     <!-- CSS -->
+  <link rel="stylesheet" href="../css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Font Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    .navbar {
+      font-family: 'Poppins', sans-serif;
+      background-color: rgba(0, 0, 0, 0.37);
+      color: rgb(0, 0, 0);
+      padding: 0% !important;
+    }
+    .maincontainer
+{
+    width: 302px;
+    height: 299px;
+    margin: 10px;
+    float: left; /* stack each div horizontally */
+}
+
+.image img
+{
+    width: 302px;
+    height: 299px;
+    border-radius: 10px;
+}
+
+.back h2
+{
+    margin-top: 90px;
+    text-align: center;
+}
+
+
+
+.front h2
+{
+    position: absolute;
+    padding: 10px;
+    top: 200px;
+    color: #000;
+}
+
+/* style the maincontainer class with all child div's of class .front */
+.maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+    width: 302px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
+}
+</style>
+</head>
+<body class="bg-body-tertiary">
+
+    <!-- Header -->
+    <nav class="navbar nav-underline navbar-expand-lg pt-4">
+        <div class="container-fluid p-2">
+          <img src="../images/logo.png" height="70px" width="75px" alt="logo" class="ms-3 mt-2">
+          <h3 class="user-select-none mt-3">Kerala Tourism</h3>
+    
+          <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-end collapse navbar-collapse padrt" id="navbarNavDropdown">
+          <ul class="navbar-nav align-items-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../district.html">Districts</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Login/Signup
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../login.html">Login</a></li>
+                <li><a class="dropdown-item" href="../signup.html">Signup</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      </header>
+
+      <!-- Contents -->
+      <div class="container mt-5">
+        <h1 class="display-4">Alappuzha</h1>
+        <img src="../images/alpy/main.jpg" alt="" class="h-25 w-100">
+            <p class="lead my-3">Alappuzha is a destination that offers a unique blend of natural beauty, cultural heritage, and traditional industries. 
+                Its backwaters and serene atmosphere make it a popular choice for travelers seeking a peaceful retreat in the heart of Kerala.
+                One of the most popular events in Alappuzha is the Nehru Trophy Boat Race, held annually on the Punnamada Lake. 
+                This competitive snake boat race attracts participants and spectators from all over the world.</p>
+            <div class="row my-5 ">
+                <h5 class="display-5 mb-3">Things to do</h5>
+                <div class="maincontainer">
+                    <div class="back">
+                        <h2>Alappuzha Beach</h2>
+                    </div>
+                    <div class="front">
+                        <div class="image">
+                        <img src="../images/alpy/alappuzha-beach.jpg" class="object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="back">
+                        <h2>Krishnapuram Palace</h2>
+                    </div>
+                    <div class="front">
+                        <div class="image">
+                        <img src="../images/alpy/Krishnapuram Palace.jpg" class="object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="back">
+                        <h2>Alappuzha Backwater Cruise</h2>
+                    </div>
+                    <div class="front">
+                        <div class="image">
+                        <img src="../images/alpy/alleppey-backwater-cruise.jpg" class="object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="back">
+                        <h2>Marari Beach</h2>
+                    </div>
+                    <div class="front">
+                        <div class="image">
+                        <img src="../images/alpy/Marari-Beach.jpg" class="object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="back">
+                        <h2>International Coir Museum</h2>
+                    </div>
+                    <div class="front">
+                        <div class="image">
+                        <img src="../images/alpy/International_Coir_Museum_Alappuzha_2830.jpg" class="object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</html>
